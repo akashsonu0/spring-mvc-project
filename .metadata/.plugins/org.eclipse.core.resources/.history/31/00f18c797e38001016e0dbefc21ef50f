@@ -1,0 +1,4 @@
+spring.application.name=01-springmvc-basics
+
+#server configuration details
+server.port = 8888
