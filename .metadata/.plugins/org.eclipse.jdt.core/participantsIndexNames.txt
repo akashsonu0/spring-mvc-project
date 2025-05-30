@@ -1,3 +1,0 @@
-INDEX VERSION 1.134
-D:\OctBatchMicroservices\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1986410057.index
-\01-springmvc-basics\src\main\java

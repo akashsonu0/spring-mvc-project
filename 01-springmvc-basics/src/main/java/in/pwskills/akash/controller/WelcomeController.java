@@ -20,12 +20,13 @@ public class WelcomeController {
 	 * 1. REQUEST TYPE :: GET/POST
 	 * 2. PATH         :: URL
 	 * 3. MODEL        :: Sending the data from Controller
-	 * 3. R.T          :: ViewName(with no technology details)
+	 * 4. R.T          :: ViewName(with no technology details)
 	 */
 	
 	//@RequestMapping("path", method=RequestMethod.GET)
 	@GetMapping(value = "/")
 	public String welcomeMsg(Model model) {
+		System.out.println("Implementation class is :: "+model.getClass().getName());
 		System.out.println("RQ  :: WelcomeController.welcomeMsg()");
 		
 		model.addAttribute("BRAND","PWSKILLS");
