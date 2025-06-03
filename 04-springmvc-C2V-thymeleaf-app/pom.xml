@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pwskills</groupId>
-	<artifactId>04-springmvc-V2C-thymeleaf-app</artifactId>
+	<artifactId>04-springmvc-C2V-thymeleaf-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name></name>
 	<description>Thymeleaf</description>
