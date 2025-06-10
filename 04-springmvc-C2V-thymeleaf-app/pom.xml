@@ -11,7 +11,7 @@
 	<groupId>pwskills</groupId>
 	<artifactId>04-springmvc-C2V-thymeleaf-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name></name>
+	<name>04-springmvc-C2V-thymeleaf-app</name>
 	<description>Thymeleaf</description>
 	<url/>
 	<licenses>
