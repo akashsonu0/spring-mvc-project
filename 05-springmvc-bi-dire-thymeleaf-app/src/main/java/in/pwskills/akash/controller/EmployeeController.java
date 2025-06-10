@@ -13,7 +13,7 @@ public class EmployeeController {
  
 	/***
 	 * 1. METHOD TYPE :: GET
-	 * 2. INPUT       :: @ModelAttribute
+	 * 2. INPUT       :: @ModelAttribute,Model
 	 * 3. PATH        :: /showForm
 	 * 4. R.T         :: EmployeeForm
 	 * 
@@ -26,9 +26,9 @@ public class EmployeeController {
 	
 	/***
 	 * 1. METHOD TYPE :: POST
-	 * 2. INPUT       :: Employee @ModelAttribute
+	 * 2. INPUT       :: @ModelAttribute,Model
 	 * 3. PATH        :: /save
-	 * 4. R.T         :: EmployeeData
+	 * 4. R.T         :: EmployeeForm
 	 * 
 	 */
 	@PostMapping(value="/save")
