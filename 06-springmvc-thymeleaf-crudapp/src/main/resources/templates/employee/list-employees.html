@@ -89,10 +89,21 @@
 		</li>
 		
 		<th:block th:each="i: ${#numbers.sequence(0, page.getTotalPages()- 1)}">
-				<li class="page-item">
-					<a class="page-link" th:href="@{/employee/list(page=${i})}">[[${i+1}]]</a>
-				</li>
-		</th:block>	
+					<div th:switch="${i}">
+						<div th:case="${page.getNumber()}">
+							<li class="page-item active">
+								<a class="page-link" th:href="@{/employee/list(page=${i})}">[[${i+1}]]</a>
+							</li>
+						</div>
+
+						<div th:case="*">
+							<li class="page-item">
+								<a class="page-link" th:href="@{/employee/list(page=${i})}">[[${i+1}]]</a>
+							</li>
+						</div>
+					</div>
+				</th:block>
+		
 				
 		<li class="page-item">
 			<a class="page-link" th:if="${page.hasNext()}" th:href="@{/employee/list(page=${page.getNumber()+1})}">Next</a>
