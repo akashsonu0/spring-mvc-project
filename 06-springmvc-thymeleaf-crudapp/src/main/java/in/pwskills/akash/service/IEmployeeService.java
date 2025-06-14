@@ -1,6 +1,7 @@
 package in.pwskills.akash.service;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import in.pwskills.akash.model.Employee;
 
@@ -10,7 +11,7 @@ public interface IEmployeeService {
 	void saveRecord(Employee employee);
 	
 	// display the records 
-	List<Employee> displayAllRecords();
+	Page<Employee> displayAllRecords(Pageable pageable);
 	
 	// delete the records
 	void deleteRecord(Integer eid);
